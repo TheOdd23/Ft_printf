@@ -16,6 +16,7 @@ int	ft_check_var(va_list args, const char var)
 {
 	int	len;
 
+	len = 0;
 	if (var == 'c')
 		len = ft_printchar(va_arg(args, int));
 	else if (var == 's')
