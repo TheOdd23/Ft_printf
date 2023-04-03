@@ -1,8 +1,9 @@
 NAME	=	libftprintf.a
-HEAD	=	ft_printf.h
+HEAD	=	includes/ft_printf.h
 CC		=	gcc
 FLAGS	=	-Wall -Werror -Wextra
-SRCS	=	ft_printf.c ft_check_var.c ft_printchar.c ft_printhex.c ft_printnbr.c ft_printunbr.c ft_printstr.c ft_itoa.c ft_printpnt.c
+SRCS	=	srcs/ft_printf.c srcs/ft_check_var.c srcs/ft_printchar.c srcs/ft_printhex.c srcs/ft_printnbr.c \
+			srcs/ft_printunbr.c srcs/ft_printstr.c srcs/ft_itoa.c srcs/ft_printpnt.c
 OBJS	=	${SRCS:.c=.o}
 RM		=	rm -f
 
